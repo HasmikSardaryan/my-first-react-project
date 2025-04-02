@@ -1,0 +1,51 @@
+.project-card {
+    position: relative;
+    /* width: 330px; */
+  }
+  
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-card{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 25px;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+  }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 35px 0px 50px 0px;
+  /* border-top: 1px solid rgb(236, 234, 234); */
+}
+
+h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0px;
+    padding: 16px 0px;
+}
+
+@media (max-width: 990px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
